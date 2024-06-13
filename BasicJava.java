@@ -18,6 +18,15 @@ public class BasicJava {
         // 5.Keep taking numbers as inputs till the user enters ‘x’, after that print
         // sum of all.
         // SumOfAll();
+
+        // 6. Write the fubunatchi table
+        // System.out.println(Fibunatchi());
+
+        // 7.Number of 7 occured :>
+        // System.out.println(NumSevenOccured());
+
+        // 8.Number reversel
+        // System.out.println(NumberReversel());
     }
 
     public static void FindLeapYear() {
@@ -101,6 +110,57 @@ public class BasicJava {
                 }
             }
 
+        }
+    }
+
+    public static Integer Fibunatchi() {
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.println("Enter the number of the Fibunatch");
+            int num = sc.nextInt();
+
+            int tempNum = 0;
+            int finalNum = 1;
+
+            // 0,1,1,2,3,5,8,13
+            for (int i = 1; i < num; i++) {
+                int temp = finalNum;
+                finalNum += tempNum;
+                tempNum = temp;
+            }
+            return finalNum;
+        }
+    }
+
+    public static Integer NumSevenOccured() {
+        try (Scanner sc = new Scanner(System.in)) {
+            int num = sc.nextInt();
+
+            int Num7Occured = 0;
+
+            while (num > 0) {
+                int rem = num % 10;
+                if (rem == 7)
+                    Num7Occured++;
+                num /= 10;
+            }
+
+            return Num7Occured;
+        }
+    }
+
+    public static Integer NumberReversel() {
+        try (Scanner sc = new Scanner(System.in)) {
+            int num = sc.nextInt();
+
+            int finalNum = 0;
+
+            while (num > 0) {
+                int rem = num % 10;
+                finalNum = finalNum * 10 + rem;
+                num /= 10;
+            }
+
+            return finalNum;
         }
     }
 }
