@@ -27,6 +27,9 @@ public class BasicJava {
 
         // 8.Number reversel
         // System.out.println(NumberReversel());
+
+        // 9. 3 digit armstrong number
+        System.out.println(ArmstrongNumber());
     }
 
     public static void FindLeapYear() {
@@ -161,6 +164,33 @@ public class BasicJava {
             }
 
             return finalNum;
+        }
+    }
+
+    public static Boolean ArmstrongNumber() {
+        try (Scanner sc = new Scanner(System.in)) {
+            /*
+             * What is armstrong number
+             * let num = 153
+             * it is equal to 1^3 + 5^3 + 3^3 = 153 
+             * hence it is a armstrong number
+             */
+
+            int num = sc.nextInt();
+            int temp = num;
+            int rem;
+
+            
+            int answer = 0;
+            
+            while (temp > 0) {
+                rem = temp % 10;
+                temp /= 10;
+                
+                answer += rem * rem * rem;
+            }
+            
+            return answer == num;
         }
     }
 }
