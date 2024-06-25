@@ -1,4 +1,4 @@
-package CourseQuestions;
+package CourseQuestions.Binary;
 
 public class OrderAgnosticBinarySearch {
 
