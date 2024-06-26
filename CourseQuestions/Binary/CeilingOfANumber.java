@@ -13,6 +13,11 @@ public class CeilingOfANumber {
 
     public static int ceilingOfANumber(int[] arr, int target) {
 
+        //if the target is greatest number in the array 
+        if(target > arr[arr.length - 1]){
+            return -1;
+        }
+
         int start = 0;
         int end = arr.length - 1;
 
