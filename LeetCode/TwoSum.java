@@ -5,6 +5,10 @@ import java.util.Arrays;
 public class TwoSum {
     public static void main(String[] args) {
 
+        //Tow sum
+
+        //1
+
         int[] nums = { 3, 2, 3 };
         int target = 6;
 
