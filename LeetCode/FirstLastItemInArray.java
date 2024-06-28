@@ -19,7 +19,8 @@ public class FirstLastItemInArray {
         int[] ans = { -1, -1 };
 
         ans[0] = binerySerch(nums, target, true);
-        ans[1] = binerySerch(nums, target, false);
+        if(ans[0] != -1)
+            ans[1] = binerySerch(nums, target, false);
 
         return ans;
     }
