@@ -2,26 +2,31 @@ package LeetCode;
 
 public class InfiLenArr {
     public static void main(String[] args) {
-        // You have to find the element without using the length of the array
+        // Problem: Find Element in an Infinite Array
+        // You are given an infinite array of integers, where the array is sorted in ascending order.
+        // Your task is to find the index of a given target element in the array.
+        // If the target element is not present in the array, return -1.
+
         int[] randomArr = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 };
         int target = 10;
 
         System.out.println(eleOfArrSizeInfi(randomArr, target));
-
     }
 
     public static int eleOfArrSizeInfi(int[] arr, int target) {
         int start = 0;
         int end = 1;
 
-        // finding the range
+        // Finding the range where the target element could be present
+        // This is done by doubling the range size until the target element is found or the range exceeds the array
         while (target > arr[end]) {
             int newStart = end + 1;
             end = end + (end - start + 1) * 2;
             start = newStart;
         }
 
-        // serching the element in the new range
+        // Searching the target element in the new range
+        // This is done using binary search
         while (start <= end) {
             int mid = start + (end - start) / 2;
 
@@ -34,7 +39,7 @@ public class InfiLenArr {
             }
         }
 
+        // If the target element is not found, return -1
         return -1;
     }
-
 }
