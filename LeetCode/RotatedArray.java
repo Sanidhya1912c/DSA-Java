@@ -2,6 +2,7 @@ package LeetCode;
 
 public class RotatedArray {
     public static void main(String[] args) {
+        // 33
         /*
          * Prior to being passed to your function, nums is possibly rotated at an
          * unknown pivot index k (1 <= k < nums.length) such that the resulting array is
@@ -15,7 +16,7 @@ public class RotatedArray {
          * You must write an algorithm with O(log n) runtime complexity
          */
 
-        int[] nums = {1,3};
+        int[] nums = { 1, 3 };
         int target = 3;
 
         System.out.println(search(nums, target));
