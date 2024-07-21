@@ -1,3 +1,4 @@
+package JavaConcepts;
 import java.util.Scanner;
 
 public class BasicJava {
@@ -29,7 +30,7 @@ public class BasicJava {
         // System.out.println(NumberReversel());
 
         // 9. 3 digit armstrong number
-        System.out.println(ArmstrongNumber());
+        // System.out.println(ArmstrongNumber());
     }
 
     public static void FindLeapYear() {
