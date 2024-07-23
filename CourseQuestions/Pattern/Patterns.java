@@ -2,25 +2,49 @@ package CourseQuestions.Pattern;
 
 public class Patterns {
     public static void main(String[] args) {
-        pattern12(5);
+        pattern31(4);
+
+    }
+
+    static void pattern31(int n) {
+        /*
+         * 4 4 4 4 4 4 4
+         * 4 3 3 3 3 3 4
+         * 4 3 2 2 2 3 4
+         * 4 3 2 1 2 3 4
+         * 4 3 2 2 2 3 4
+         * 4 3 3 3 3 3 4
+         * 4 4 4 4 4 4 4
+         */
+
+        for (int i = n * 2 - 1; i > 0; i--) {
+            for (int j = n * 2 - 1; j > 0; j--) {
+                int atEveryIndex = Math.min(Math.min(i, j), Math.min(n * 2 - i, n * 2 - j));
+
+                System.out.print(atEveryIndex + "  ");
+            }
+            System.out.println();
+        }
 
     }
 
     static void pattern13(int n) {
+
+        // The formeter not letting me comment the exact pattern so sorry ig
+
         /*
-             *
-            * *
-           *   *
-          *     *
+         *
+         * *
+         * *
+         * *
          *********
          */
-
 
     }
 
     static void pattern12(int n) {
 
-        //The formeter not letting me comment the exact pattern so sorry ig 
+        // The formeter not letting me comment the exact pattern so sorry ig
 
         /*
          * * * * *
