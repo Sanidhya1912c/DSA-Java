@@ -1,4 +1,4 @@
-package CourseQuestions.CyclicSort;
+package CyclicSort;
 
 import java.util.ArrayList;
 

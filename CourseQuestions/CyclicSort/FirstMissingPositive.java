@@ -1,4 +1,4 @@
-package CourseQuestions.CyclicSort;
+package CyclicSort;
 
 public class FirstMissingPositive {
     public static void main(String[] args) {

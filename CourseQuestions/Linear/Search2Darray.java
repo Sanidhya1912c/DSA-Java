@@ -1,4 +1,4 @@
-package CourseQuestions.Linear;
+package Linear;
 
 import java.util.Arrays;
 

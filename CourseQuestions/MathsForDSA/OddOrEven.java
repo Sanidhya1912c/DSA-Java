@@ -1,4 +1,4 @@
-package CourseQuestions.MathsForDSA;
+package MathsForDSA;
 
 public class OddOrEven {
     public static void main(String[] args) {

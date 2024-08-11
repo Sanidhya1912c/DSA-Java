@@ -1,4 +1,4 @@
-package CourseQuestions.MathsForDSA;
+package MathsForDSA;
 
 public class FindUnique {
     public static void main(String[] args) {
