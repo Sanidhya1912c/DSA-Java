@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class PrimeNumlist {
     public static void main(String[] args) {
-        int num = 100000;
+        int num = 100;
         System.out.println(primeList(num));
     }
 
@@ -27,7 +27,7 @@ public class PrimeNumlist {
             return false;
 
         int c = 2;
-        while (c * c <= n) {
+        while (c * c <= Math.sqrt(n)) {
             if (n % c == 0) {
                 return false;
             }
